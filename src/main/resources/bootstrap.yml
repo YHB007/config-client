@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      profile: test-5
+      label: master
+      uri: http://localhost:8082
+      prefix: ${spring.cloud.config.uri}/nondestructive-hedging-strategy/test-5/main
